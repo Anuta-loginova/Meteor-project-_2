@@ -66,10 +66,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>290</y>
-      <width>211</width>
-      <height>211</height>
+      <x>330</x>
+      <y>270</y>
+      <width>131</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="sizeIncrement">
@@ -94,7 +94,7 @@
      <number>-10</number>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: 2px solid black; border-radius: 105px; background-color: lightgrey;</string>
+     <string notr="true"> background-color: lightgrey; border:1px solid black;</string>
     </property>
    </widget>
    <widget class="QColumnView" name="columnView_2">
@@ -103,8 +103,8 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>260</y>
+      <x>620</x>
+      <y>140</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -132,6 +132,19 @@
     </property>
     <property name="styleSheet">
      <string notr="true">border: 2px solid black; border-radius: 30px; background-color: lightgrey;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lable_1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
    </widget>
   </widget>

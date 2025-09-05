@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "EllipseWidget.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -18,7 +18,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_columnView_updatePreviewWidget(const QModelIndex &index);
+void on_columnView_updatePreviewWidget(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;
