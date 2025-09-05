@@ -13,9 +13,10 @@ qt_add_executable(untitled
     mainwindow.ui
     logic.cpp
     logic.h
-    styles.qrc
 
-
+    qsplashscreen.h
+    qsplashscreen.cpp
+    sources.qrc
 
 )
 
