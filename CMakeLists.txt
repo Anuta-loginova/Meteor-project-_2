@@ -11,6 +11,12 @@ qt_add_executable(untitled
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    logic.cpp
+    logic.h
+    styles.qrc
+
+
+
 )
 
 target_link_libraries(untitled
