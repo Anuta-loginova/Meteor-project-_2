@@ -5,6 +5,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap)
 {
     // Можно задать стиль текста, цвет, шрифт
     this->setFont(QFont("Arial", 12, QFont::Bold));
+
 }
 
 void SplashScreen::showMessageText(const QString &text)

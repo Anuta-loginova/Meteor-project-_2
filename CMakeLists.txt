@@ -7,6 +7,7 @@ qt_standard_project_setup()
 
 qt_add_executable(untitled
     WIN32 MACOSX_BUNDLE
+
     main.cpp
     mainwindow.cpp
     mainwindow.h
@@ -16,19 +17,19 @@ qt_add_executable(untitled
 
     qsplashscreen.h
     qsplashscreen.cpp
-    a1b158d7d3222b8b4b87b.png
+    read.h
+    read.cpp
     REs.qrc
-
-
-
 
 )
 
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Network)
 
 target_link_libraries(untitled
     PRIVATE
         Qt::Core
         Qt::Widgets
+        Qt6::Network
 )
 
 include(GNUInstallDirs)
@@ -44,5 +45,7 @@ qt_generate_deploy_app_script(
     OUTPUT_SCRIPT deploy_script
     NO_UNSUPPORTED_PLATFORM_ERROR
 )
+
+
 
 install(SCRIPT ${deploy_script})
