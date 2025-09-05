@@ -3,6 +3,7 @@
 #include "qsplashscreen.h"
 #include <QApplication>
 #include<QThread>
+#include"QResource"
 
 int main(int argc, char *argv[])
 {
@@ -10,7 +11,10 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    QPixmap pixmap(":/images/Adjektivdeklination_alle_Deklinationstypen_in_einer_Tabelle.png");// картинка для заставки
+    QPixmap pixmap(":/a1b158d7d3222b8b4b87b.png");
+    if (pixmap.isNull())
+        qDebug() << "Картинка не найдена!";
+
     SplashScreen splash(pixmap);
     splash.show();
 
