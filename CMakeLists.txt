@@ -16,9 +16,14 @@ qt_add_executable(untitled
 
     qsplashscreen.h
     qsplashscreen.cpp
-    sources.qrc
+    a1b158d7d3222b8b4b87b.png
+    REs.qrc
+
+
+
 
 )
+
 
 target_link_libraries(untitled
     PRIVATE
@@ -39,4 +44,5 @@ qt_generate_deploy_app_script(
     OUTPUT_SCRIPT deploy_script
     NO_UNSUPPORTED_PLATFORM_ERROR
 )
+
 install(SCRIPT ${deploy_script})
